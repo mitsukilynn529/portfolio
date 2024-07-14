@@ -1,0 +1,676 @@
+/* *{
+    border: solid 1px red;
+} */
+html{
+    scroll-behavior: smooth;
+}
+*{
+        margin: 0 0;
+        padding: 0 0;
+        box-sizing: border-box;
+        color:#333333
+
+}
+section{
+    max-width: 1000px;
+    margin-left:auto ;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style: none;
+
+}
+.header_container li{
+     padding: 0 1em;
+     position: relative;
+     display: inline-block;
+}
+.header_container li::after{
+    position: absolute;
+    bottom:-4px;
+    left:0;
+    content:'';
+    width: 100%;
+    height: 1px;
+    background: #333;
+    transform: scale(0,1);
+    transform-origin: center top;
+    transition: transform .3s;
+}
+.header_container li:hover::after{
+    transform: scale(1,1);
+}
+
+
+
+.header_container{
+    margin: 50px 60px 50px 0 ;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+}
+
+.top_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    background-image: url(image/top_image_leaf.png);
+    background-position: bottom 5% left 20%;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    
+}
+.title{
+    flex-basis: 30%;
+    text-align: center;
+    align-items: center;
+    animation-name: fade;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    padding: 3px;
+    
+}
+.top_image{
+    flex-basis: 65%;
+    animation: fuwafuwa 4s infinite ease-in-out .8s alternate;
+    transition: 2s ease-in-out;
+    
+}
+
+@keyframes fuwafuwa {
+    0%{
+        transform:translate(0,0) rotate(-5deg)
+    }
+    50%{
+        transform: translate(0,-5) rotate(0deg);
+    }
+    100%{
+        transform: translate(0,0) rotate(5deg)
+    }
+
+}
+
+h1,h2,h3,.header_container{
+    font-family: 'Spectral', serif;
+}
+
+h1{
+    font-size: 60px;
+    text-align:left;
+    padding-top: 1em;
+    padding-bottom: 0,5em;
+}
+h2{
+    text-align:left;
+    font-size: 30px;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Plofile Page */
+.index{
+    flex-basis: 35%;
+    background-color:rgb(210, 208, 212); 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.plofile_page{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 70px;
+   
+}
+.plofile{
+    flex-basis:60%;
+    padding:0 3px;
+}
+    
+
+.indent{
+    text-indent: 4em;
+}
+.plofile_page img{
+    border-radius: 200px;
+}
+
+.plofile_write{
+    padding-top: 60px;
+    padding-left: 2em;
+    text-align: left;
+}
+
+
+.index_banner,.index_cording,.index_EC{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin:0 0 30px 0;
+    padding-left: 7%;
+}
+
+
+.index_banner p,.index_cording p,.index_EC p{
+    flex-basis: 50%;
+}
+
+.index_3{
+    align-items: center;
+}
+
+h3{
+    white-space: nowrap;
+    font-size: 32px;
+   
+}
+.plofile_page h3{
+    margin:80px 0 ;
+}
+h4{
+    font-family: 'Zen Old Mincho', serif;
+    font-size:15px;
+    padding:0 0.5em;
+    text-align: justify;
+}
+h5{
+    font-family: 'Zen Old Mincho', serif;
+    font-size: 22px;
+    margin-bottom: 0.5em;
+
+}
+h6{
+    font-family: 'Spectral', serif;
+    font-size: 18px;
+    margin-bottom: 0.5em;
+}
+.plofile li{
+    font-size: 14px;
+    line-height: 1.7em;
+}
+.title_skills{
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+.skills img{
+    width: 50px;
+    border-radius: 0;
+    margin:5px 6px 0 0px;
+}
+.soft_name{
+    font-weight: bold;
+}
+table{
+    font-size: 14px;
+}
+.office{
+    width: 15%;
+    padding-left: 6px;
+}
+.icon{
+    width:5%;
+}
+.office {
+    width: 4.5%;
+}
+
+/* Banner design Page */
+
+.banner_page_title,.web_coding_title,.web_coding2_title,.ec_management_title,.web_editing_title{
+    font-family: 'Zen Old Mincho', serif;
+    height:120px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 30px;
+}
+.banner_page_title{
+    background-color:rgb(218, 210, 215);
+    margin-bottom: 30px;
+}
+.banner_container{
+    max-width: 1000px;
+    margin:60px auto 80px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+}
+.banner_item{
+    flex-basis:300px;
+    padding: 0 3px;
+}
+
+.banner_concept{
+    font-size: 13px;
+    margin-bottom: 2em;
+}
+.banner_name{
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 0.5em;
+}
+.time{
+    font-size: 11px;
+    float: right;
+}
+
+
+/* Web Cording Page */
+
+.web_coding_title,.web_coding2_title{
+background-color:rgb(220, 208, 215); 
+    margin-bottom: 20px;
+}
+
+.lynn_container,.up_container{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 3px;
+    
+    
+}
+.lynn_item, .up_item{
+    flex-basis: 30%;
+    padding: 0 3px;
+}
+
+.lynn_container img{
+    border: 1px solid #ddd;
+}
+.site_name{
+    margin-top: 1em;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 0.5em;
+}
+.site_concept{
+    font-size: 14px;
+    margin-bottom: 2em;
+}
+.link_lynn,.link_minrepi,.link_up{
+    font-size: 14px;
+    color: darksalmon;
+    border-bottom: 1px solid darksalmon;
+}
+.link_lynn:hover, .link_minrepi:hover{
+    opacity: 0.6;
+}
+.site_time{
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5em;
+}
+.lynn_concept{
+    padding: 0 3px;
+}
+.concept_QR{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+}
+.lynn_QRspace{
+    height: 130px;
+    width: 130px;
+    margin:auto 0 5px auto;
+}
+
+.up_container_right{
+    display: flex;
+    flex-direction: column;
+}
+.up_banner, .up_logo{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+.banner_logo{
+    width: 100%;
+    padding: 0 3px;
+}
+.banner_concept, .logo_concept{
+    flex-basis: 60%;
+}
+.up_p{
+font-size: 11px;
+}
+.up_banner_title, .up_logo_title{
+    font-size: 13px;
+    font-weight: bold;
+}
+.site_time_up{
+    font-size: 12px;
+    display: block;
+}
+.up_QRspace{
+    height: 130px;
+    width: 130px;
+    margin:auto 0 0 auto;
+}
+.up_concept{
+    padding: 0 3px;
+}
+
+
+
+/* EC Management Page */
+
+.ec_management_title{
+    background-color: rgb(222, 208, 213);
+}
+.twoway_container{
+    max-width: 1000px;
+    margin:30px auto 20px auto;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.twoway_capture{
+    flex-basis: 36%;
+}
+.twoway_container table{
+    flex-basis: 50%;
+}
+.twoway_container table td{
+    width:45%;
+}
+
+.twoway_item, .twoway_logo_p{
+    font-size: 11px;
+    font-weight: normal;
+}
+.twoway_item_time{
+    margin-left: 2em;
+    font-weight: normal;
+}
+.twoway_site{
+    padding: 0 5px;
+}
+
+
+/* Web Editing Page */
+
+.web_editing_title{
+    background-color: rgb(224, 208, 213); 
+        margin-bottom: 20px;
+    }
+.minnrepe_container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+.minnrepe_capture{
+    flex-basis: 40%;
+}
+
+.minnrepe_right{
+    flex-basis: 50%;
+}
+.concept_QR_min{
+    display: flex;
+    flex-direction: column;
+}
+
+.min_QRspace{
+    height: 130px;
+    width: 130px;
+    margin:auto 0 5px auto;
+}
+
+
+.web_editing p{
+    font-size: 14px;
+}
+.minnrepe_logo{
+    margin-bottom: 35px;
+}
+.thanks{
+    font-family: 'Zen Old Mincho', serif;
+    background-color:rgb(224, 208, 213); 
+    padding: 20px;
+}
+
+
+
+/* メディアクエリ */
+@media(max-width:920px){
+    h3{
+    font-size: 26px;
+}
+.banner_page_title p,.web_coding_title p,.web_coding2_title p,.ec_management_title p,.web_editing_title p{
+    font-size: 12px;
+}
+li, .plofile_write li, .plofile_write td{
+    font-size: 12px;
+} 
+.minnrepe_right p, .site_concept{
+    font-size: 12px;
+}
+.up_banner, .up_logo{
+flex-direction: column;
+    /* flex-wrap: wrap; */
+}}
+
+@media(max-width:850px){
+    h1{
+        font-size: 46px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .title{
+        margin-left: 2em;
+    }
+}
+
+@media(max-width:738px){
+    .index_banner,.index_cording,.index_EC{
+        flex-direction: column;
+    }
+    h4{
+        text-align: center;
+    }
+    .index_3 img{
+        width: 150px;
+    }
+    .index_banner,.index_cording,.index_EC{
+        padding-left: 0;
+    }
+}
+
+@media(max-width:694px){
+    .top_container{
+        background-size: 100px;
+        
+    }
+    .top_image{
+        flex-basis: 65%;
+    }
+    
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    .twoway_container{
+        flex-direction: column;
+    
+}
+.banner_page_title,.web_coding_title,.web_coding2_title,.ec_management_title,.web_editing_title{
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+}
+
+@media(max-width:640px){
+    .top_container{
+        flex-direction: column;
+}
+h1,h2{
+    text-align: center;
+}
+.header_container{
+    flex-direction: column;
+    margin: 30px auto 0 auto;
+}
+.header_container li{
+    text-align: center;
+}
+.top_container{
+background-size: 50px;
+}
+.title{
+    margin-left:0;
+}
+.plofile_write{
+    background-position: top 12% right 5%;
+    background-size: 35%;
+}
+
+p, .link_lynn, .link_minrepi{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+}
+@media(max-width:560px){
+    .plofile_write{ 
+        margin-left: auto;   
+        margin-right: auto;    
+    background-position: top 60px center;
+    background-size: 70%;
+    padding-right: 2em;   
+}
+.plofile_page{
+    flex-direction: column;
+}
+h5{
+    margin-top: 250px;
+}
+.lynn_container,.up_container,.minnrepe_container{
+    flex-direction: column;
+}
+.web_editing{
+    padding: 0 3px;
+}
+.concept_QR{
+    flex-direction: column;
+}
+}
+
+/* スクロールフェードアップ */
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#page-top::before{
+    content: "";
+}
+/* topボタン */
+#page-top a {
+    position:absolute;
+    right: 20px;
+    bottom: 30px;
+    height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transform: rotate(90deg);
+    font-size: 90%;
+    line-height: 1.5rem;
+    color: #333333;
+    padding: 0 0 0 35px;
+    border-top: solid 1px;
+    transition: all 0.2s;
+}
+
+#page-top a:hover {
+    background: #777;
+}
+
+/*リンクを右下に固定*/
+#page-top {
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    z-index: 2;
+    /*はじめは非表示*/
+    opacity: 0;
+    transform: translateX(100px);
+}
+
+/*　左の動き　*/
+
+#page-top.LeftMove {
+    animation: LeftAnime 0.5s forwards;
+}
+
+@keyframes LeftAnime {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*　右の動き　*/
+
+#page-top.RightMove {
+    animation: RightAnime 0.5s forwards;
+}
+
+@keyframes RightAnime {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(200px);
+    }
+}
+
